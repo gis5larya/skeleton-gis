@@ -25,7 +25,7 @@ const pointTable = document.getElementById("pointTable").getElementsByTagName('t
 const polygonTable = document.getElementById("polygonTable").getElementsByTagName('tbody')[0];
 const polylineTable = document.getElementById("polylineTable").getElementsByTagName('tbody')[0];
 
-fetch("https://raw.githubusercontent.com/GilarYa/GIS2/main/config/json/bereslek.json")
+fetch("https://raw.githubusercontent.com/GilarYa/GISLAR/main/polygon.json")
     .then(response => response.json())
     .then(data => {
         data.features.forEach(feature => {
@@ -41,9 +41,9 @@ fetch("https://raw.githubusercontent.com/GilarYa/GIS2/main/config/json/bereslek.
     .catch(error => console.error("Terjadi kesalahan:", error));;
 
 // Definisikan URL GeoJSON untuk masing-masing jenis fitur
-const polygonGeoJSONUrl = 'https://raw.githubusercontent.com/GilarYa/GIS2/main/config/json/bereslek.json';
-const lineStringGeoJSONUrl = 'https://raw.githubusercontent.com/GilarYa/GIS2/main/config/json/bereslek.json';
-const pointGeoJSONUrl = 'https://raw.githubusercontent.com/GilarYa/GIS2/main/config/json/bereslek.json';
+const polygonGeoJSONUrl = 'https://raw.githubusercontent.com/GilarYa/GISLAR/main/polygon.json';
+const lineStringGeoJSONUrl = 'https://raw.githubusercontent.com/GilarYa/GISLAR/main/polygon.json';
+const pointGeoJSONUrl = 'https://raw.githubusercontent.com/GilarYa/GISLAR/main/polygon.json';
 
 // Buat sumber vektor dan lapisan vektor untuk masing-masing jenis fitur
 const polygonSource = new VectorSource({
