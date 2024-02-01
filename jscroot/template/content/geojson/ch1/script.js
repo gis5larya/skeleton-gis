@@ -7,13 +7,13 @@ export function main() {
 
         // Set nameCell based on properties
         if (feature.properties.Alamat && feature.properties.Jalan) {
-            nameCell.innerText = `${feature.properties.Point}, ${feature.properties.Alamat}, ${feature.properties.Jalan}`;
+            nameCell.innerText = `${feature.properties.name}, ${feature.properties.Alamat}, ${feature.properties.Jalan}`;
         } else if (feature.properties.Alamat) {
             nameCell.innerText = `${feature.properties.Alamat}`;
         } else if (feature.properties.Jalan) {
             nameCell.innerText = `${feature.properties.Jalan}`;
         } else {
-            nameCell.innerText = feature.properties.Point;
+            nameCell.innerText = feature.properties.name;
         }
 
         coordinatesCell.innerText = JSON.stringify(feature.geometry.coordinates);
