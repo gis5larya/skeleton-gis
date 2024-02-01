@@ -1,5 +1,5 @@
-export let URLGeoJson = "https://asia-southeast2-gilartest.cloudfunctions.net/getdatayaw";
-export let urlPostGCF = "https://asia-southeast2-gilartest.cloudfunctions.net/larch3v2";
+export let URLGeoJson = "https://asia-southeast2-gilartest.cloudfunctions.net/larch3v2";
+export let urlPostGCF = "https://asia-southeast2-gilartest.cloudfunctions.net/larcbgis4v2";
 export let tableTag="tr";
 export let tableRowClass="content is-small";
 export let tableTemplate=`
